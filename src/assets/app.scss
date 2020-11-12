@@ -1,0 +1,48 @@
+// colors
+$sidebar: #040404;
+$main: #121212;
+$card: #161616;
+$playbar: #282828;
+$inactive: #b3b3b3;
+$nav: #050505;
+$blazer: #1b4965;
+$padding: 1.5rem;
+$gradient: linear-gradient(320deg, #000000 50%, $playbar 74%);
+$gradient2: linear-gradient(107deg, #000000 20%, #3e5aac 79%);
+$gradient3: linear-gradient(167deg, #000000 20%, #3e5aac 59%);
+$gradient4: linear-gradient(to bottom right, #000000, #7e8a39);
+$gradient5: linear-gradient(180deg, $sidebar 19%, $blazer 90%);
+
+// breakpoints
+$xs: 430px;
+$sm: 480px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1280px;
+
+@mixin xs {
+    @media screen and (min-width: #{$xs}) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media screen and (min-width: #{$sm}) {
+        @content;
+    }
+}
+@mixin md {
+    @media screen and (min-width: #{$md}) {
+        @content;
+    }
+}
+@mixin lg {
+    @media screen and (min-width: #{$lg}) {
+        @content;
+    }
+}
+@mixin xl {
+    @media screen and (min-width: #{$xl}) {
+        @content;
+    }
+}
